@@ -1,0 +1,23 @@
+{
+  "name": "text_trade_api",
+  "version": "1.0.0",
+  "description": "Back end for the Text Trade project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chloegaskell/Text_Trade_API.git"
+  },
+  "author": "Chloe Gaskell, Ciaran Farah, Harsh Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chloegaskell/Text_Trade_API/issues"
+  },
+  "homepage": "https://github.com/chloegaskell/Text_Trade_API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
