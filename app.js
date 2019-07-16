@@ -1,10 +1,19 @@
+/** seperation just allows you to run w multiple routes
+*/
+
 var express = require('express');
-var app = express();
+const route = require('./routes/route');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+const bodyParser = require('body-parser')
+const cors = require('cors');
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+const app = express();
+app.use(cors());
+const port = 4000;
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+route(app);
+app.listen(process.env.PORT || port, () => {
+  /** ignore. */
 });
